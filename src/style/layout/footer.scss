@@ -1,0 +1,26 @@
+@import "../common/mixins.scss";
+
+footer{
+  @include size(100vw,30vh);
+  @include color-set(white,#333);
+  @include flex(row,start,center);
+  padding:1vw;
+  padding:20px;
+
+  & > div {
+    @include size(40%,100%);
+    margin:1vw;
+      & > h1{
+        height:8vh;
+        font-size: 1.5em;
+      }
+      & > p {
+        font-size: .8em;
+      }
+
+      .imagesBox{
+        @include flex(row,start,center);
+        gap:1vw;
+      }
+  }
+}

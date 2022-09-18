@@ -12,5 +12,6 @@
 
 @mixin color-set($color,$bgcolor){
   color:$color;
-  bgcolor:$bgcolor;
+  background-color:$bgcolor;
+  
 }

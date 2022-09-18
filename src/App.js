@@ -1,8 +1,8 @@
 import React,{Component} from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './Header.js';
+import Header from './components/Header.js';
 import Main from './pages/Main';
-import Main2 from "./Main2.js";
+import Footer from "./components/Footer.js";
 import "./style/base/base.scss";
 
 const App = () =>{
@@ -12,8 +12,9 @@ const App = () =>{
           <Header/>
           <Routes>
             <Route path="/" element={<Main/>}></Route>
-            <Route path="/main2" element={<Main2/>}></Route>
+       
           </Routes>
+          <Footer/>
         </BrowserRouter>
       </div>
     )

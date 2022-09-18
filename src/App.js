@@ -12,7 +12,6 @@ const App = () =>{
           <Header/>
           <Routes>
             <Route path="/" element={<Main/>}></Route>
-       
           </Routes>
           <Footer/>
         </BrowserRouter>

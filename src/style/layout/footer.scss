@@ -4,9 +4,11 @@ footer{
   @include size(100vw,30vh);
   @include color-set(white,#333);
   @include flex(row,start,center);
-  padding:1vw;
+  padding:1vw;  
   padding:20px;
 
+
+  //ABOUT, ADRESS 박스 스타일 지정
   & > div {
     @include size(40%,100%);
     margin:1vw;
@@ -17,7 +19,7 @@ footer{
       & > p {
         font-size: .8em;
       }
-
+      
       .imagesBox{
         @include flex(row,start,center);
         gap:1vw;

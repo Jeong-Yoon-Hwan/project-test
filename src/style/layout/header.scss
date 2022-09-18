@@ -1,0 +1,30 @@
+@import "../common/mixins.scss";
+@import "../components/login-button.scss";
+@import "../components/logo.scss";
+
+// 헤더 스타일
+.header{
+  @include size(100vw,10vh);
+  @include flex(row,space-between,center);
+  background-color: white;
+  box-shadow: 0px 0px 4px gray;
+  
+  //로고영역
+  & > div:nth-child(1){
+    width:100px;
+    height:inherit;
+    @include flex(row,center,center);
+  }
+
+  //메뉴리스트 스타일
+  & > ul {
+    display:flex;
+    gap:5vw;
+  }
+
+  //로그인 버튼 영역
+  & > div:nth-child(3){
+    @include size(100px,inherit);
+    @include flex(row,center,center);
+  }
+}

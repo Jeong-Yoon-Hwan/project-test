@@ -24,13 +24,19 @@ module.exports = {
                 loader: 'babel-loader'
             },
             {
-                test: /\.css$/,
+                test: /\.(css|scss)$/,
                 use: [
                     {
                         loader: 'style-loader', 
                     },
                     {
                         loader: 'css-loader', 
+                    },
+                    {
+                        loader:'sass-loader',
+                        options:{
+                            implementation: require("sass"),
+                        }
                     },
                 ]
             }

@@ -1,8 +1,9 @@
 import React,{Component} from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './Header.js';
-import Main from './Main';
+import Main from './pages/Main';
 import Main2 from "./Main2.js";
+import "./style/base/base.scss";
 
 const App = () =>{
     return (
